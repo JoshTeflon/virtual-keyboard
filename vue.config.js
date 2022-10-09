@@ -1,4 +1,8 @@
 const { defineConfig } = require('@vue/cli-service')
+const vetur = require('@volar-plugins/vetur');
 module.exports = defineConfig({
-  transpileDependencies: true
+  transpileDependencies: true,
+  plugins: [
+		vetur(),
+	],
 })
