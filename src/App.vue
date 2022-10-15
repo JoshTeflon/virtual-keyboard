@@ -167,6 +167,10 @@ export default {
       insertValue("\n");
     }
 
+    const onTab = () => {
+      insertValue("\t");
+    }
+
     const handleBtn = (key) => {
       if(key.value === "CapsLock") {
         onCapsLock();
@@ -182,6 +186,9 @@ export default {
       }
       if(key.value === "Enter") {
         onEnter();
+      }
+      if(key.value === "Tab") {
+        onTab();
       }
 
       if(key.type === 'value' && shiftValue.value === false && capsValue.value === false) {
